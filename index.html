@@ -28,7 +28,7 @@ email : a.saleh.ismael@gmail.com or xloka@xloka.com
 {Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}
 </title>
 <meta name="author" content="@mrxloka"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- Facebook Graph-->
 <meta property="og:site_name" content="{Title}"/>
@@ -149,6 +149,7 @@ email : a.saleh.ismael@gmail.com or xloka@xloka.com
 <meta name="text:Github URL" content=""/>
 <meta name="text:Youtube URL" content=""/>
 {/block:Hidden}
+
 {block:IfKewords}
 <meta name="keywords" content="{text:Keywords}" />
 {/block:IfKewords}
@@ -504,6 +505,12 @@ background: linear-gradient(360deg, rgba(255,255,255,0.5) 10%, rgba(204, 204, 20
 {block:Description}
 <meta name="description" content="{MetaDescription}" />
 {/block:Description}
+
+<!--[if IE]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
 {block:IfGoogleAnalyticsUACode}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
